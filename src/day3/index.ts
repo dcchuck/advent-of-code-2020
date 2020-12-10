@@ -13,8 +13,6 @@ function day3() {
     }()
 
     const tree = '#'
-    const yIncrement = 1
-    const xIncrement = 3
     const columnNumberBaseZero = parsedInput[0].length - 1
 
     function runSlope(xIncrement, yIncrement) {
@@ -25,6 +23,7 @@ function day3() {
             if (parsedInput[y][x] === tree) {
                 treesHit += 1
             }
+            
             x += xIncrement
     
             if (x > columnNumberBaseZero) {
